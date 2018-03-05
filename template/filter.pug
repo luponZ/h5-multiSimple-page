@@ -1,0 +1,36 @@
+extends include/layout.pug
+
+block title
+    title filter
+
+block style
+    link(rel="stylesheet", href="./css/filter.css")
+block headScripts
+    include include/resize.pug
+
+block body
+        header
+            h2 滤镜功能介绍
+            p Light滤镜功能的主界面如下图所示，将滤镜类别进行分组，一键应用，分别适用于风景、食物、人物、建筑等。
+            #slide
+                .slideBoxTop
+                    img(src="./img/0-2.jpg", alt="")
+                .slideBoxBot
+                    img(src="./img/0-1.jpg", alt="")
+        article
+            section.content-use
+                h3 应用滤镜以及叠加滤镜效果
+                p 点击一个滤镜以选中并应用该滤镜效果。选中态下，再次点击该滤镜可以调整滤镜的应用程度。滑动进度条调整应用程度数值，点击√应用该滤镜对应程度数值。 
+                .sample.slideSwap
+            section.content-effect
+                h3 以下为通过滤镜是人脸肤色更加通透例子：
+                .sample.faceChange
+                    img(src="./img/动画1-2.jpg", alt="")
+                p 1.打开原图，我们可以看到模特脸色偏暗黄无光泽，选择purity滤镜，让皮肤看起来更加白皙一些，再次点击滤镜，调整进度条指至0.49，点击√应用。
+                .sample.contrastBox
+                    .contrastImg
+                    .contrastImg
+                p 2.滑动滤镜列表，选择Flavor滤镜进行叠加，打造模特整体肤色的通透以及层次感，根据照片整体氛围调整进度至0.29，人脸的通透白净感就呈现出来了。
+                .sample.lastShow
+//- block footScripts
+//-     script(src="./js/filter.bundle.js")
