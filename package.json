@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/.bin/gulp",
-    "build": "./node_modules/.bin/gulp inlinesource"
+    "build-inline": "./node_modules/.bin/gulp prod",
+    "build": "./node_modules/.bin/gulp dev"
   },
   "author": "jooker",
   "license": "ISC",
@@ -15,7 +16,9 @@
     "event-stream": "^3.3.4",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^3.9.2",
+    "gulp-html-minify": "^0.0.14",
     "gulp-inline": "^0.1.3",
     "gulp-inline-source": "^3.1.0",
     "gulp-minify-css": "^1.2.4",
