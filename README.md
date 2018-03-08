@@ -24,8 +24,8 @@ $ npm run build || yarn build
 
 ### build it by inline
 ```bash
-$ npm run build || yarn build-inline
+$ npm run build-inline || yarn build-inline
 ```
 
-##Config
+## Config
 look config/config.js
